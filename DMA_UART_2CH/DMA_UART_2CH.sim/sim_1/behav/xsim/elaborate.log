@@ -1,0 +1,36 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DMA_UART_tb_behav xil_defaultlib.DMA_UART_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.axi4lite_master_pkg
+Compiling architecture rtl of entity xil_defaultlib.FIFO [\FIFO(g_width=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.AXI_ADDRESS_CONTROL_CHANNEL [axi_address_control_channel_defa...]
+Compiling architecture behavioral of entity xil_defaultlib.AXI_READ_DATA_CHANNEL [axi_read_data_channel_default]
+Compiling architecture behavioral of entity xil_defaultlib.AXI_WRITE_DATA_CHANNEL [axi_write_data_channel_default]
+Compiling architecture behavioral of entity xil_defaultlib.AXI_WRITE_DATA_RESPONSE_CHANNEL [axi_write_data_response_channel_...]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_manager [fifo_manager_default]
+Compiling architecture behavioral of entity xil_defaultlib.AXI_master [axi_master_default]
+Compiling architecture arch_imp of entity xil_defaultlib.AXI4_Lite_Slave_Driver [axi4_lite_slave_driver_default]
+Compiling architecture arch_imp of entity xil_defaultlib.AXI4_Lite_Slave [axi4_lite_slave_default]
+Compiling architecture rtl of entity xil_defaultlib.UART_RX [uart_rx_default]
+Compiling architecture rtl of entity xil_defaultlib.FIFO [\FIFO(g_depth=11)\]
+Compiling architecture rtl of entity xil_defaultlib.UART_RX_INTERFACE [\UART_RX_INTERFACE(g_fifo_depth=...]
+Compiling architecture rtl of entity xil_defaultlib.UART_TX [uart_tx_default]
+Compiling architecture rtl of entity xil_defaultlib.UART_TX_INTERFACE [\UART_TX_INTERFACE(g_fifo_depth=...]
+Compiling architecture rtl of entity xil_defaultlib.UART_INTERFACE [\UART_INTERFACE(g_fifo_depth=11)...]
+Compiling architecture behavioral of entity xil_defaultlib.DMA_ENGINE [\DMA_ENGINE(g_fifo_depth=11)\]
+Compiling architecture behavioral of entity xil_defaultlib.DMA_UART [dma_uart_default]
+Compiling architecture arch_imp of entity xil_defaultlib.AXI4_Full_Slave [\AXI4_Full_Slave(c_s_axi_id_widt...]
+Compiling architecture arch_imp of entity xil_defaultlib.AXI4_Full_Slave_IP [axi4_full_slave_ip_default]
+Compiling architecture bench of entity xil_defaultlib.dma_uart_tb
+Built simulation snapshot DMA_UART_tb_behav

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DMA_UART_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="DMA_UART_tb" />
+            <top_module name="axi4lite_master_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,112.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="140"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="100" />
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_rst" type="logic">
+      <obj_property name="ElementShortName">o_uart_0_rst</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_clk_per_bit" type="array">
+      <obj_property name="ElementShortName">o_uart_0_clk_per_bit[23:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_clk_per_bit[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_rx_idle_timer" type="array">
+      <obj_property name="ElementShortName">o_uart_0_rx_idle_timer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_rx_idle_timer[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_data_width" type="array">
+      <obj_property name="ElementShortName">o_uart_0_data_width[1:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_data_width[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_parity_en" type="logic">
+      <obj_property name="ElementShortName">o_uart_0_parity_en</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_parity_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_parity" type="logic">
+      <obj_property name="ElementShortName">o_uart_0_parity</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_parity</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_stop_bit" type="logic">
+      <obj_property name="ElementShortName">o_uart_0_stop_bit</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_stop_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_tx_buffer_addr" type="array">
+      <obj_property name="ElementShortName">o_uart_0_tx_buffer_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_tx_buffer_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_tx_data_len" type="array">
+      <obj_property name="ElementShortName">o_uart_0_tx_data_len[11:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_tx_data_len[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_tx_start" type="logic">
+      <obj_property name="ElementShortName">o_uart_0_tx_start</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_tx_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/i_uart_0_tx_done" type="logic">
+      <obj_property name="ElementShortName">i_uart_0_tx_done</obj_property>
+      <obj_property name="ObjectShortName">i_uart_0_tx_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/i_uart_0_tx_busy" type="logic">
+      <obj_property name="ElementShortName">i_uart_0_tx_busy</obj_property>
+      <obj_property name="ObjectShortName">i_uart_0_tx_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_tx_clr" type="logic">
+      <obj_property name="ElementShortName">o_uart_0_tx_clr</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_tx_clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_rx_en" type="logic">
+      <obj_property name="ElementShortName">o_uart_0_rx_en</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_rx_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_rx_buffer_addr" type="array">
+      <obj_property name="ElementShortName">o_uart_0_rx_buffer_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_rx_buffer_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_rx_buffer_len" type="array">
+      <obj_property name="ElementShortName">o_uart_0_rx_buffer_len[11:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_rx_buffer_len[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/i_uart_0_rx_data_len" type="array">
+      <obj_property name="ElementShortName">i_uart_0_rx_data_len[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_uart_0_rx_data_len[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/i_uart_0_rx_done" type="logic">
+      <obj_property name="ElementShortName">i_uart_0_rx_done</obj_property>
+      <obj_property name="ObjectShortName">i_uart_0_rx_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/i_uart_0_rx_half_done" type="logic">
+      <obj_property name="ElementShortName">i_uart_0_rx_half_done</obj_property>
+      <obj_property name="ObjectShortName">i_uart_0_rx_half_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_rx_clr" type="logic">
+      <obj_property name="ElementShortName">o_uart_0_rx_clr</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_rx_clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_rst" type="logic">
+      <obj_property name="ElementShortName">o_uart_1_rst</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_clk_per_bit" type="array">
+      <obj_property name="ElementShortName">o_uart_1_clk_per_bit[23:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_clk_per_bit[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_rx_idle_timer" type="array">
+      <obj_property name="ElementShortName">o_uart_1_rx_idle_timer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_rx_idle_timer[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_data_width" type="array">
+      <obj_property name="ElementShortName">o_uart_1_data_width[1:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_data_width[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_parity_en" type="logic">
+      <obj_property name="ElementShortName">o_uart_1_parity_en</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_parity_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_parity" type="logic">
+      <obj_property name="ElementShortName">o_uart_1_parity</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_parity</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_stop_bit" type="logic">
+      <obj_property name="ElementShortName">o_uart_1_stop_bit</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_stop_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_tx_buffer_addr" type="array">
+      <obj_property name="ElementShortName">o_uart_1_tx_buffer_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_tx_buffer_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_tx_data_len" type="array">
+      <obj_property name="ElementShortName">o_uart_1_tx_data_len[11:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_tx_data_len[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_tx_start" type="logic">
+      <obj_property name="ElementShortName">o_uart_1_tx_start</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_tx_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/i_uart_1_tx_done" type="logic">
+      <obj_property name="ElementShortName">i_uart_1_tx_done</obj_property>
+      <obj_property name="ObjectShortName">i_uart_1_tx_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/i_uart_1_tx_busy" type="logic">
+      <obj_property name="ElementShortName">i_uart_1_tx_busy</obj_property>
+      <obj_property name="ObjectShortName">i_uart_1_tx_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_tx_clr" type="logic">
+      <obj_property name="ElementShortName">o_uart_1_tx_clr</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_tx_clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_rx_en" type="logic">
+      <obj_property name="ElementShortName">o_uart_1_rx_en</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_rx_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_rx_buffer_addr" type="array">
+      <obj_property name="ElementShortName">o_uart_1_rx_buffer_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_rx_buffer_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_rx_buffer_len" type="array">
+      <obj_property name="ElementShortName">o_uart_1_rx_buffer_len[11:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_rx_buffer_len[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/i_uart_1_rx_data_len" type="array">
+      <obj_property name="ElementShortName">i_uart_1_rx_data_len[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_uart_1_rx_data_len[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/i_uart_1_rx_done" type="logic">
+      <obj_property name="ElementShortName">i_uart_1_rx_done</obj_property>
+      <obj_property name="ObjectShortName">i_uart_1_rx_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/i_uart_1_rx_half_done" type="logic">
+      <obj_property name="ElementShortName">i_uart_1_rx_half_done</obj_property>
+      <obj_property name="ObjectShortName">i_uart_1_rx_half_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_1_rx_clr" type="logic">
+      <obj_property name="ElementShortName">o_uart_1_rx_clr</obj_property>
+      <obj_property name="ObjectShortName">o_uart_1_rx_clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/o_uart_0_1_sync" type="logic">
+      <obj_property name="ElementShortName">o_uart_0_1_sync</obj_property>
+      <obj_property name="ObjectShortName">o_uart_0_1_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_ACLK" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ACLK</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_ARESETN" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_AWADDR" type="array">
+      <obj_property name="ElementShortName">S_AXI_AWADDR[5:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWADDR[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_AWPROT" type="array">
+      <obj_property name="ElementShortName">S_AXI_AWPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWPROT[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_AWVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_AWREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_WDATA" type="array">
+      <obj_property name="ElementShortName">S_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_WSTRB" type="array">
+      <obj_property name="ElementShortName">S_AXI_WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_WVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_WREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_BRESP" type="array">
+      <obj_property name="ElementShortName">S_AXI_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_BVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_BVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_BREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_BREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_ARADDR" type="array">
+      <obj_property name="ElementShortName">S_AXI_ARADDR[5:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARADDR[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_ARPROT" type="array">
+      <obj_property name="ElementShortName">S_AXI_ARPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARPROT[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_ARVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_ARREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_RDATA" type="array">
+      <obj_property name="ElementShortName">S_AXI_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_RRESP" type="array">
+      <obj_property name="ElementShortName">S_AXI_RRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_RVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_RVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/S_AXI_RREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_RREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/axi_awaddr" type="array">
+      <obj_property name="ElementShortName">axi_awaddr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_awaddr[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/axi_awready" type="logic">
+      <obj_property name="ElementShortName">axi_awready</obj_property>
+      <obj_property name="ObjectShortName">axi_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/axi_wready" type="logic">
+      <obj_property name="ElementShortName">axi_wready</obj_property>
+      <obj_property name="ObjectShortName">axi_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/axi_bresp" type="array">
+      <obj_property name="ElementShortName">axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/axi_bvalid" type="logic">
+      <obj_property name="ElementShortName">axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/axi_araddr" type="array">
+      <obj_property name="ElementShortName">axi_araddr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_araddr[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/axi_arready" type="logic">
+      <obj_property name="ElementShortName">axi_arready</obj_property>
+      <obj_property name="ObjectShortName">axi_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/axi_rresp" type="array">
+      <obj_property name="ElementShortName">axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/axi_rvalid" type="logic">
+      <obj_property name="ElementShortName">axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg0" type="array">
+      <obj_property name="ElementShortName">slv_reg0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg1" type="array">
+      <obj_property name="ElementShortName">slv_reg1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg2" type="array">
+      <obj_property name="ElementShortName">slv_reg2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg3" type="array">
+      <obj_property name="ElementShortName">slv_reg3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg4" type="array">
+      <obj_property name="ElementShortName">slv_reg4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg5" type="array">
+      <obj_property name="ElementShortName">slv_reg5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg5[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg6" type="array">
+      <obj_property name="ElementShortName">slv_reg6[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg6[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg7" type="array">
+      <obj_property name="ElementShortName">slv_reg7[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg7[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg8" type="array">
+      <obj_property name="ElementShortName">slv_reg8[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg8[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg9" type="array">
+      <obj_property name="ElementShortName">slv_reg9[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg9[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg10" type="array">
+      <obj_property name="ElementShortName">slv_reg10[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg10[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg11" type="array">
+      <obj_property name="ElementShortName">slv_reg11[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg11[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg12" type="array">
+      <obj_property name="ElementShortName">slv_reg12[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg12[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg13" type="array">
+      <obj_property name="ElementShortName">slv_reg13[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg13[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg14" type="array">
+      <obj_property name="ElementShortName">slv_reg14[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg14[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/slv_reg15" type="array">
+      <obj_property name="ElementShortName">slv_reg15[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg15[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/byte_index" type="other">
+      <obj_property name="ElementShortName">byte_index</obj_property>
+      <obj_property name="ObjectShortName">byte_index</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/mem_logic" type="array">
+      <obj_property name="ElementShortName">mem_logic[5:2]</obj_property>
+      <obj_property name="ObjectShortName">mem_logic[5:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/state_read" type="array">
+      <obj_property name="ElementShortName">state_read[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state_read[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/state_write" type="array">
+      <obj_property name="ElementShortName">state_write[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state_write[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/C_S_AXI_DATA_WIDTH" type="other">
+      <obj_property name="ElementShortName">C_S_AXI_DATA_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">C_S_AXI_DATA_WIDTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/C_S_AXI_ADDR_WIDTH" type="other">
+      <obj_property name="ElementShortName">C_S_AXI_ADDR_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">C_S_AXI_ADDR_WIDTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/ADDR_LSB" type="other">
+      <obj_property name="ElementShortName">ADDR_LSB</obj_property>
+      <obj_property name="ObjectShortName">ADDR_LSB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/OPT_MEM_ADDR_BITS" type="other">
+      <obj_property name="ElementShortName">OPT_MEM_ADDR_BITS</obj_property>
+      <obj_property name="ObjectShortName">OPT_MEM_ADDR_BITS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/Idle" type="array">
+      <obj_property name="ElementShortName">Idle[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Idle[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/Raddr" type="array">
+      <obj_property name="ElementShortName">Raddr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Raddr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/Rdata" type="array">
+      <obj_property name="ElementShortName">Rdata[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Rdata[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/Waddr" type="array">
+      <obj_property name="ElementShortName">Waddr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Waddr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DMA_UART_tb/DMA_UART_inst/AXI4_Lite_Slave_inst/AXI4_Lite_Slave_Driver_inst/Wdata" type="array">
+      <obj_property name="ElementShortName">Wdata[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Wdata[1:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,129 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Jan  3 11:32:27 2026
+# Process ID         : 18620
+# Current directory  : D:/Projects_Git/DMA_UART/DMA_UART_2CH
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent26928 D:\Projects_Git\DMA_UART\DMA_UART_2CH\DMA_UART_2CH.xpr
+# Log file           : D:/Projects_Git/DMA_UART/DMA_UART_2CH/vivado.log
+# Journal file       : D:/Projects_Git/DMA_UART/DMA_UART_2CH\vivado.jou
+# Running On         : OrhunPc
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 255HX
+# CPU Frequency      : 2880 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 20
+# Host memory        : 33673 MB
+# Swap memory        : 5368 MB
+# Total Virtual      : 39042 MB
+# Available Virtual  : 28199 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DMA_UART [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 19
+wait_on_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DMA_ENGINE [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DMA_UART [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+close_design
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sim_1/new/DMA_UART_tb.vhd w ]
+add_files -fileset sim_1 D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sim_1/new/DMA_UART_tb.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DMA_UART_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config D:/Projects_Git/DMA_UART/DMA_UART_2CH/UART_INTERFACE_tb_behav.wcfg
+open_wave_config D:/Projects_Git/DMA_UART/DMA_UART_2CH/UART_INTERFACE_tb_behav1.wcfg
+open_wave_config D:/Projects_Git/DMA_UART/DMA_UART_2CH/UART_INTERFACE_tb_behav2.wcfg
+source DMA_UART_tb.tcl
+close_sim
+set_property is_enabled false [get_files  {D:/Projects_Git/DMA_UART/DMA_UART_2CH/UART_INTERFACE_tb_behav.wcfg D:/Projects_Git/DMA_UART/DMA_UART_2CH/UART_INTERFACE_tb_behav1.wcfg D:/Projects_Git/DMA_UART/DMA_UART_2CH/UART_INTERFACE_tb_behav2.wcfg}]
+launch_simulation
+launch_simulation
+source DMA_UART_tb.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse D:/Projects_Git/VHDL_lib/SIM/AXI4_Lite_Slave_Tester/axi4lite_master_pkg.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source DMA_UART_tb.tcl
+run 1 ms
+restart
+run 1 ms
+close_sim
+launch_simulation
+source DMA_UART_tb.tcl
+restart
+run 1 ms
+create_wave_config
+restart
+run 1 ms
+relaunch_sim
+save_wave_config {D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_tb_behav.wcfg
+set_property xsim.view {D:/Projects_Git/DMA_UART/DMA_UART_2CH/UART_INTERFACE_tb_behav.wcfg D:/Projects_Git/DMA_UART/DMA_UART_2CH/UART_INTERFACE_tb_behav1.wcfg D:/Projects_Git/DMA_UART/DMA_UART_2CH/UART_INTERFACE_tb_behav2.wcfg D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_tb_behav.wcfg} [get_filesets sim_1]
+save_wave_config {D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_AXI4_LITE_SLAVE_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_AXI4_LITE_SLAVE_behav.wcfg
+set_property xsim.view {D:/Projects_Git/DMA_UART/DMA_UART_2CH/UART_INTERFACE_tb_behav.wcfg D:/Projects_Git/DMA_UART/DMA_UART_2CH/UART_INTERFACE_tb_behav1.wcfg D:/Projects_Git/DMA_UART/DMA_UART_2CH/UART_INTERFACE_tb_behav2.wcfg D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_tb_behav.wcfg D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_AXI4_LITE_SLAVE_behav.wcfg} [get_filesets sim_1]
+close_sim
+reset_simulation
+launch_simulation
+open_wave_config D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_tb_behav.wcfg
+open_wave_config D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_AXI4_LITE_SLAVE_behav.wcfg
+source DMA_UART_tb.tcl
+run 1 ms
+relaunch_sim
+relaunch_sim
+close_sim
+reset_simulation
+launch_simulation
+open_wave_config D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_tb_behav.wcfg
+open_wave_config D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_AXI4_LITE_SLAVE_behav.wcfg
+source DMA_UART_tb.tcl
+run 1 ms
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 1 ms
+relaunch_sim

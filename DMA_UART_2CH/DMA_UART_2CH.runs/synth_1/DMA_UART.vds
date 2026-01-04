@@ -1,0 +1,630 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Jan  3 11:33:05 2026
+# Process ID         : 10472
+# Current directory  : D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.runs/synth_1
+# Command line       : vivado.exe -log DMA_UART.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DMA_UART.tcl
+# Log file           : D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.runs/synth_1/DMA_UART.vds
+# Journal file       : D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.runs/synth_1\vivado.jou
+# Running On         : OrhunPc
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 255HX
+# CPU Frequency      : 2880 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 20
+# Host memory        : 33673 MB
+# Swap memory        : 5368 MB
+# Total Virtual      : 39042 MB
+# Available Virtual  : 26197 MB
+#-----------------------------------------------------------
+source DMA_UART.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Projects_Git/DMA_UART/ip_repo/AXI4_Lite_Slave_1_0'.
+WARNING: [IP_Flow 19-2207] Repository 'd:/Projects_Git/DMA_UART/ip_repo/AXI4_Lite_Slave_1_0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Projects_Git/DMA_UART/ip_repo/AXI4_Lite_Slave_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Projects_Git/DMA_UART/ip_repo/myip_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/utils_1/imports/synth_1/AXI_master.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/utils_1/imports/synth_1/AXI_master.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top DMA_UART -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7204
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1001.246 ; gain = 469.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DMA_UART' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_UART.vhd:106]
+	Parameter data_width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'AXI_master' declared at 'D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_master_transaction.vhd:6' bound to instance 'AXI_master_inst' of component 'AXI_master' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_UART.vhd:476]
+INFO: [Synth 8-638] synthesizing module 'AXI_master' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_master_transaction.vhd:83]
+	Parameter data_width bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_master_transaction.vhd:405]
+INFO: [Synth 8-3491] module 'AXI_ADDRESS_CONTROL_CHANNEL' declared at 'D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_ADDRESS_CONTROL_CHANNEL.vhd:13' bound to instance 'read_address_channel' of component 'AXI_ADDRESS_CONTROL_CHANNEL' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_master_transaction.vhd:475]
+INFO: [Synth 8-638] synthesizing module 'AXI_ADDRESS_CONTROL_CHANNEL' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_ADDRESS_CONTROL_CHANNEL.vhd:44]
+INFO: [Synth 8-226] default block is never used [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_ADDRESS_CONTROL_CHANNEL.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'AXI_ADDRESS_CONTROL_CHANNEL' (0#1) [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_ADDRESS_CONTROL_CHANNEL.vhd:44]
+INFO: [Synth 8-3491] module 'AXI_ADDRESS_CONTROL_CHANNEL' declared at 'D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_ADDRESS_CONTROL_CHANNEL.vhd:13' bound to instance 'write_address_channel' of component 'AXI_ADDRESS_CONTROL_CHANNEL' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_master_transaction.vhd:501]
+	Parameter data_width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'AXI_READ_DATA_CHANNEL' declared at 'D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_READ_DATA_CHANNEL.vhd:14' bound to instance 'read_data_channel' of component 'AXI_READ_DATA_CHANNEL' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_master_transaction.vhd:527]
+INFO: [Synth 8-638] synthesizing module 'AXI_READ_DATA_CHANNEL' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_READ_DATA_CHANNEL.vhd:44]
+	Parameter data_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'AXI_READ_DATA_CHANNEL' (0#1) [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_READ_DATA_CHANNEL.vhd:44]
+	Parameter data_width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'AXI_WRITE_DATA_CHANNEL' declared at 'D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_WRITE_DATA_CHANNEL.vhd:13' bound to instance 'write_data_channel' of component 'AXI_WRITE_DATA_CHANNEL' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_master_transaction.vhd:552]
+INFO: [Synth 8-638] synthesizing module 'AXI_WRITE_DATA_CHANNEL' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_WRITE_DATA_CHANNEL.vhd:43]
+	Parameter data_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'AXI_WRITE_DATA_CHANNEL' (0#1) [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_WRITE_DATA_CHANNEL.vhd:43]
+INFO: [Synth 8-3491] module 'AXI_WRITE_DATA_RESPONSE_CHANNEL' declared at 'D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_WRITE_RESPONSE_CHANNEL.vhd:13' bound to instance 'write_data_response_channel' of component 'AXI_WRITE_DATA_RESPONSE_CHANNEL' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_master_transaction.vhd:576]
+INFO: [Synth 8-638] synthesizing module 'AXI_WRITE_DATA_RESPONSE_CHANNEL' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_WRITE_RESPONSE_CHANNEL.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'AXI_WRITE_DATA_RESPONSE_CHANNEL' (0#1) [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_WRITE_RESPONSE_CHANNEL.vhd:29]
+	Parameter data_width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_manager' declared at 'D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/fifo_manager.vhd:9' bound to instance 'write_data_fifo_management' of component 'fifo_manager' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_master_transaction.vhd:591]
+INFO: [Synth 8-638] synthesizing module 'fifo_manager' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/fifo_manager.vhd:27]
+	Parameter data_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_manager' (0#1) [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/fifo_manager.vhd:27]
+	Parameter g_width bound to: 32 - type: integer 
+	Parameter g_depth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FIFO' declared at 'D:/Projects_Git/VHDL_lib/FIFO/FIFO.vhd:31' bound to instance 'read_data_fifo_inst' of component 'FIFO' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_master_transaction.vhd:611]
+INFO: [Synth 8-638] synthesizing module 'FIFO' [D:/Projects_Git/VHDL_lib/FIFO/FIFO.vhd:57]
+	Parameter g_width bound to: 32 - type: integer 
+	Parameter g_depth bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FIFO' (0#1) [D:/Projects_Git/VHDL_lib/FIFO/FIFO.vhd:57]
+	Parameter g_width bound to: 32 - type: integer 
+	Parameter g_depth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FIFO' declared at 'D:/Projects_Git/VHDL_lib/FIFO/FIFO.vhd:31' bound to instance 'write_data_fifo_inst' of component 'FIFO' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_master_transaction.vhd:632]
+INFO: [Synth 8-256] done synthesizing module 'AXI_master' (0#1) [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_master_transaction.vhd:83]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'AXI4_Lite_Slave' declared at 'D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI4_Lite_Slave.vhd:5' bound to instance 'AXI4_Lite_Slave_inst' of component 'AXI4_Lite_Slave' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_UART.vhd:543]
+INFO: [Synth 8-638] synthesizing module 'AXI4_Lite_Slave' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI4_Lite_Slave.vhd:89]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'AXI4_Lite_Slave_Driver' declared at 'D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI4_Lite_Slave_Driver.vhd:5' bound to instance 'AXI4_Lite_Slave_Driver_inst' of component 'AXI4_Lite_Slave_Driver' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI4_Lite_Slave.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'AXI4_Lite_Slave_Driver' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI4_Lite_Slave_Driver.vhd:130]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI4_Lite_Slave_Driver.vhd:392]
+INFO: [Synth 8-256] done synthesizing module 'AXI4_Lite_Slave_Driver' (0#1) [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI4_Lite_Slave_Driver.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'AXI4_Lite_Slave' (0#1) [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI4_Lite_Slave.vhd:89]
+	Parameter g_fifo_depth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'UART_INTERFACE' declared at 'D:/Projects_Git/VHDL_lib/UART/RTL/UART_INTERFACE.vhd:30' bound to instance 'UART_INTERFACE_0_inst' of component 'UART_INTERFACE' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_UART.vhd:617]
+INFO: [Synth 8-638] synthesizing module 'UART_INTERFACE' [D:/Projects_Git/VHDL_lib/UART/RTL/UART_INTERFACE.vhd:79]
+	Parameter g_fifo_depth bound to: 8 - type: integer 
+	Parameter g_fifo_depth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'UART_RX_INTERFACE' declared at 'D:/Projects_Git/VHDL_lib/UART/RTL/UART_RX_INTERFACE.vhd:27' bound to instance 'UART_RX_INTERFACE_inst' of component 'UART_RX_INTERFACE' [D:/Projects_Git/VHDL_lib/UART/RTL/UART_INTERFACE.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'UART_RX_INTERFACE' [D:/Projects_Git/VHDL_lib/UART/RTL/UART_RX_INTERFACE.vhd:63]
+	Parameter g_fifo_depth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'UART_RX' declared at 'D:/Projects_Git/VHDL_lib/UART/RTL/UART_RX.vhd:33' bound to instance 'UART_RX_inst' of component 'UART_RX' [D:/Projects_Git/VHDL_lib/UART/RTL/UART_RX_INTERFACE.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'UART_RX' [D:/Projects_Git/VHDL_lib/UART/RTL/UART_RX.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'UART_RX' (0#1) [D:/Projects_Git/VHDL_lib/UART/RTL/UART_RX.vhd:59]
+	Parameter g_width bound to: 8 - type: integer 
+	Parameter g_depth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FIFO' declared at 'D:/Projects_Git/VHDL_lib/FIFO/FIFO.vhd:31' bound to instance 'FIFO_inst' of component 'FIFO' [D:/Projects_Git/VHDL_lib/UART/RTL/UART_RX_INTERFACE.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'FIFO__parameterized2' [D:/Projects_Git/VHDL_lib/FIFO/FIFO.vhd:57]
+	Parameter g_width bound to: 8 - type: integer 
+	Parameter g_depth bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FIFO__parameterized2' (0#1) [D:/Projects_Git/VHDL_lib/FIFO/FIFO.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'UART_RX_INTERFACE' (0#1) [D:/Projects_Git/VHDL_lib/UART/RTL/UART_RX_INTERFACE.vhd:63]
+	Parameter g_fifo_depth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'UART_TX_INTERFACE' declared at 'D:/Projects_Git/VHDL_lib/UART/RTL/UART_TX_INTERFACE.vhd:28' bound to instance 'UART_TX_INTERFACE_inst' of component 'UART_TX_INTERFACE' [D:/Projects_Git/VHDL_lib/UART/RTL/UART_INTERFACE.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'UART_TX_INTERFACE' [D:/Projects_Git/VHDL_lib/UART/RTL/UART_TX_INTERFACE.vhd:62]
+	Parameter g_fifo_depth bound to: 8 - type: integer 
+	Parameter g_width bound to: 8 - type: integer 
+	Parameter g_depth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FIFO' declared at 'D:/Projects_Git/VHDL_lib/FIFO/FIFO.vhd:31' bound to instance 'FIFO_inst' of component 'FIFO' [D:/Projects_Git/VHDL_lib/UART/RTL/UART_TX_INTERFACE.vhd:175]
+INFO: [Synth 8-3491] module 'UART_TX' declared at 'D:/Projects_Git/VHDL_lib/UART/RTL/UART_TX.vhd:33' bound to instance 'UART_TX_inst' of component 'UART_TX' [D:/Projects_Git/VHDL_lib/UART/RTL/UART_TX_INTERFACE.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'UART_TX' [D:/Projects_Git/VHDL_lib/UART/RTL/UART_TX.vhd:56]
+INFO: [Synth 8-226] default block is never used [D:/Projects_Git/VHDL_lib/UART/RTL/UART_TX.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'UART_TX' (0#1) [D:/Projects_Git/VHDL_lib/UART/RTL/UART_TX.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'UART_TX_INTERFACE' (0#1) [D:/Projects_Git/VHDL_lib/UART/RTL/UART_TX_INTERFACE.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'UART_INTERFACE' (0#1) [D:/Projects_Git/VHDL_lib/UART/RTL/UART_INTERFACE.vhd:79]
+	Parameter g_fifo_depth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'UART_INTERFACE' declared at 'D:/Projects_Git/VHDL_lib/UART/RTL/UART_INTERFACE.vhd:30' bound to instance 'UART_INTERFACE_1_inst' of component 'UART_INTERFACE' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_UART.vhd:650]
+	Parameter g_fifo_depth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'DMA_ENGINE' declared at 'D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_ENGINE.vhd:32' bound to instance 'DMA_ENGINE_inst' of component 'DMA_ENGINE' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_UART.vhd:683]
+INFO: [Synth 8-638] synthesizing module 'DMA_ENGINE' [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_ENGINE.vhd:133]
+	Parameter g_fifo_depth bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DMA_ENGINE' (0#1) [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_ENGINE.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'DMA_UART' (0#1) [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_UART.vhd:106]
+WARNING: [Synth 8-3848] Net o_uart_0_tx_data_len in module/entity AXI4_Lite_Slave_Driver does not have driver. [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI4_Lite_Slave_Driver.vhd:28]
+WARNING: [Synth 8-3848] Net o_uart_1_tx_data_len in module/entity AXI4_Lite_Slave_Driver does not have driver. [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI4_Lite_Slave_Driver.vhd:49]
+WARNING: [Synth 8-3848] Net s_uart_0_tx_busy in module/entity DMA_UART does not have driver. [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_UART.vhd:447]
+WARNING: [Synth 8-3848] Net s_uart_1_tx_busy in module/entity DMA_UART does not have driver. [D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_UART.vhd:461]
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[11] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[10] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[9] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[8] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[7] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[6] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[5] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[4] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[3] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[2] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[1] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[0] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[11] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[10] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[9] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[8] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[7] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[6] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[5] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[4] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[3] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[2] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[1] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[0] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[11] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[10] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[9] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[8] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[7] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[6] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[5] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[4] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[3] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[2] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[1] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[0] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[11] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[10] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[9] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[8] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[7] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[6] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[5] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[4] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[3] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[2] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[1] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[0] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port burst_length[8] in module AXI_ADDRESS_CONTROL_CHANNEL is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1127.445 ; gain = 595.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1127.445 ; gain = 595.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1127.445 ; gain = 595.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'AXI_ADDRESS_CONTROL_CHANNEL'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'AXI_READ_DATA_CHANNEL'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'AXI_WRITE_DATA_CHANNEL'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'AXI_WRITE_DATA_RESPONSE_CHANNEL'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'fifo_manager'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'AXI_master'
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'AXI4_Lite_Slave_Driver'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'AXI4_Lite_Slave_Driver'
+INFO: [Synth 8-802] inferred FSM for state register 's_state_reg' in module 'UART_RX'
+INFO: [Synth 8-802] inferred FSM for state register 's_state_reg' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                            00001 |                              000
+                    idle |                            00010 |                              001
+                 running |                            00100 |                              010
+                complete |                            01000 |                              100
+          error_detected |                            10000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'AXI_ADDRESS_CONTROL_CHANNEL'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                            00001 |                              000
+                    idle |                            00010 |                              001
+        transaction_okay |                            00100 |                              010
+                complete |                            01000 |                              100
+       transaction_error |                            10000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'AXI_READ_DATA_CHANNEL'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                             0001 |                              000
+                    idle |                             0010 |                              001
+                 running |                             0100 |                              010
+                complete |                             1000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'AXI_WRITE_DATA_CHANNEL'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                            00001 |                              000
+                    idle |                            00010 |                              001
+                 running |                            00100 |                              010
+                 success |                            01000 |                              011
+          error_detected |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'AXI_WRITE_DATA_RESPONSE_CHANNEL'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                              001 |                               00
+           wait_for_fifo |                              010 |                               01
+           data_is_valid |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'fifo_manager'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                          0000001 |                              000
+                    idle |                          0000010 |                              001
+                 prepare |                          0000100 |                              010
+        read_transaction |                          0001000 |                              011
+       write_transaction |                          0010000 |                              100
+          error_detected |                          0100000 |                              101
+                complete |                          1000000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'AXI_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                   waddr |                              010 |                               10
+                   wdata |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'one-hot' in module 'AXI4_Lite_Slave_Driver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   raddr |                               01 |                               10
+                   rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'AXI4_Lite_Slave_Driver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 st_idle |                              000 |                              000
+            st_start_bit |                              001 |                              001
+            st_data_bits |                              010 |                              010
+           st_parity_bit |                              011 |                              011
+            st_stop_bits |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_state_reg' using encoding 'sequential' in module 'UART_RX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 st_idle |                              000 |                              000
+            st_start_bit |                              001 |                              001
+            st_data_bits |                              010 |                              010
+           st_parity_bit |                              011 |                              011
+            st_stop_bits |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_state_reg' using encoding 'sequential' in module 'UART_TX'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1128.035 ; gain = 596.023
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   24 Bit       Adders := 8     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 26    
+	   2 Input    3 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 18    
+	               24 Bit    Registers := 6     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 29    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 12    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 83    
++---RAMs : 
+	               8K Bit	(256 X 32 bit)          RAMs := 2     
+	               2K Bit	(256 X 8 bit)          RAMs := 4     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 17    
+	  16 Input   32 Bit        Muxes := 15    
+	   2 Input    9 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 2     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 9     
+	   5 Input    5 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 23    
+	   2 Input    4 Bit        Muxes := 7     
+	   4 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 20    
+	   5 Input    3 Bit        Muxes := 8     
+	   2 Input    2 Bit        Muxes := 8     
+	   3 Input    2 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 63    
+	   2 Input    1 Bit        Muxes := 35    
+	   4 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 14    
+	   7 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[11] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[10] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[9] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[8] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[7] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[6] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[5] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[4] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[3] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[2] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[1] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_0_tx_data_len[0] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[11] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[10] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[9] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[8] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[7] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[6] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[5] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[4] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[3] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[2] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[1] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_uart_1_tx_data_len[0] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[11] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[10] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[9] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[8] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[7] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[6] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[5] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[4] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[3] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[2] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[1] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_0_rx_data_len[0] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[11] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[10] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[9] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[8] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[7] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[6] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[5] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[4] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_uart_1_rx_data_len[3] in module AXI4_Lite_Slave_Driver is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1361.691 ; gain = 829.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------+-------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name     | RTL Object                                            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------+-------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|AXI_master_inst | generate_32b_data_fifo.read_data_fifo_inst/s_ram_reg  | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|AXI_master_inst | generate_32b_data_fifo.write_data_fifo_inst/s_ram_reg | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|UART_INTERFACE: | UART_RX_INTERFACE_inst/FIFO_inst/s_ram_reg            | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|UART_INTERFACE: | UART_TX_INTERFACE_inst/FIFO_inst/s_ram_reg            | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|UART_INTERFACE: | UART_RX_INTERFACE_inst/FIFO_inst/s_ram_reg            | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|UART_INTERFACE: | UART_TX_INTERFACE_inst/FIFO_inst/s_ram_reg            | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++----------------+-------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1361.691 ; gain = 829.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------+-------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name     | RTL Object                                            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------+-------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|AXI_master_inst | generate_32b_data_fifo.read_data_fifo_inst/s_ram_reg  | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|AXI_master_inst | generate_32b_data_fifo.write_data_fifo_inst/s_ram_reg | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|UART_INTERFACE: | UART_RX_INTERFACE_inst/FIFO_inst/s_ram_reg            | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|UART_INTERFACE: | UART_TX_INTERFACE_inst/FIFO_inst/s_ram_reg            | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|UART_INTERFACE: | UART_RX_INTERFACE_inst/FIFO_inst/s_ram_reg            | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|UART_INTERFACE: | UART_TX_INTERFACE_inst/FIFO_inst/s_ram_reg            | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++----------------+-------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance AXI_master_inst/generate_32b_data_fifo.read_data_fifo_inst/s_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance AXI_master_inst/generate_32b_data_fifo.write_data_fifo_inst/s_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance UART_INTERFACE_0_inst/UART_RX_INTERFACE_inst/FIFO_inst/s_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance UART_INTERFACE_0_inst/UART_TX_INTERFACE_inst/FIFO_inst/s_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance UART_INTERFACE_1_inst/UART_RX_INTERFACE_inst/FIFO_inst/s_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance UART_INTERFACE_1_inst/UART_TX_INTERFACE_inst/FIFO_inst/s_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1361.691 ; gain = 829.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1547.371 ; gain = 1015.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1547.371 ; gain = 1015.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1547.371 ; gain = 1015.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1547.371 ; gain = 1015.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1549.398 ; gain = 1017.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1549.398 ; gain = 1017.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |DMA_ENGINE    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |DMA_ENGINE |     1|
+|2     |BUFG       |     1|
+|3     |CARRY4     |   104|
+|4     |LUT1       |    84|
+|5     |LUT2       |   273|
+|6     |LUT3       |    72|
+|7     |LUT4       |    79|
+|8     |LUT5       |   116|
+|9     |LUT6       |   350|
+|10    |MUXF7      |    64|
+|11    |MUXF8      |    32|
+|12    |RAMB18E1   |     6|
+|13    |FDRE       |   966|
+|14    |FDSE       |   186|
+|15    |IBUF       |    95|
+|16    |OBUF       |   223|
++------+-----------+------+
+
+Report Instance Areas: 
++------+--------------------------------------------------+--------------------------------+------+
+|      |Instance                                          |Module                          |Cells |
++------+--------------------------------------------------+--------------------------------+------+
+|1     |top                                               |                                |  2790|
+|2     |  AXI4_Lite_Slave_inst                            |AXI4_Lite_Slave                 |   961|
+|3     |    AXI4_Lite_Slave_Driver_inst                   |AXI4_Lite_Slave_Driver          |   957|
+|4     |  AXI_master_inst                                 |AXI_master                      |   363|
+|5     |    \generate_32b_data_fifo.read_data_fifo_inst   |FIFO                            |    66|
+|6     |    \generate_32b_data_fifo.write_data_fifo_inst  |FIFO_8                          |    63|
+|7     |    read_address_channel                          |AXI_ADDRESS_CONTROL_CHANNEL     |    44|
+|8     |    read_data_channel                             |AXI_READ_DATA_CHANNEL           |     9|
+|9     |    write_address_channel                         |AXI_ADDRESS_CONTROL_CHANNEL_9   |    51|
+|10    |    write_data_channel                            |AXI_WRITE_DATA_CHANNEL          |    12|
+|11    |    write_data_fifo_management                    |fifo_manager                    |     8|
+|12    |    write_data_response_channel                   |AXI_WRITE_DATA_RESPONSE_CHANNEL |    13|
+|13    |  UART_INTERFACE_0_inst                           |UART_INTERFACE                  |   504|
+|14    |    UART_RX_INTERFACE_inst                        |UART_RX_INTERFACE_2             |   336|
+|15    |      FIFO_inst                                   |FIFO__parameterized2_6          |    62|
+|16    |      UART_RX_inst                                |UART_RX_7                       |   243|
+|17    |    UART_TX_INTERFACE_inst                        |UART_TX_INTERFACE_3             |   168|
+|18    |      FIFO_inst                                   |FIFO__parameterized2_4          |    69|
+|19    |      UART_TX_inst                                |UART_TX_5                       |    96|
+|20    |  UART_INTERFACE_1_inst                           |UART_INTERFACE_0                |   504|
+|21    |    UART_RX_INTERFACE_inst                        |UART_RX_INTERFACE               |   336|
+|22    |      FIFO_inst                                   |FIFO__parameterized2_1          |    62|
+|23    |      UART_RX_inst                                |UART_RX                         |   243|
+|24    |    UART_TX_INTERFACE_inst                        |UART_TX_INTERFACE               |   168|
+|25    |      FIFO_inst                                   |FIFO__parameterized2            |    69|
+|26    |      UART_TX_inst                                |UART_TX                         |    96|
++------+--------------------------------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1549.398 ; gain = 1017.387
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 118 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1549.398 ; gain = 1017.387
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1549.398 ; gain = 1017.387
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1562.461 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 206 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1680.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 97e9e839
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1680.664 ; gain = 1155.949
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1680.664 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.runs/synth_1/DMA_UART.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file DMA_UART_utilization_synth.rpt -pb DMA_UART_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  3 11:33:27 2026...

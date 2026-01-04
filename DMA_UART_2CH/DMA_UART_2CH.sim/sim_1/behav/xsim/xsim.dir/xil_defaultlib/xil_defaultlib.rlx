@@ -1,0 +1,24 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sim_1/new/AXI4_Full_Slave.vhd,1767458000,vhdl,,,,axi4_full_slave,,,,,,,,
+D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sim_1/new/AXI4_Full_Slave_IP.vhd,1767453858,vhdl,D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sim_1/new/DMA_UART_tb.vhd,,,axi4_full_slave_ip,,,,,,,,
+D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sim_1/new/DMA_UART_tb.vhd,1767467921,vhdl,,,,dma_uart_tb,,,,,,,,
+D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI4_Lite_Slave.vhd,1767356830,vhdl,,,,axi4_lite_slave,,,,,,,,
+D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI4_Lite_Slave_Driver.vhd,1767467235,vhdl,,,,axi4_lite_slave_driver,,,,,,,,
+D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_ADDRESS_CONTROL_CHANNEL.vhd,1766217072,vhdl,,,,axi_address_control_channel,,,,,,,,
+D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_READ_DATA_CHANNEL.vhd,1766217072,vhdl,,,,axi_read_data_channel,,,,,,,,
+D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_WRITE_DATA_CHANNEL.vhd,1766217072,vhdl,,,,axi_write_data_channel,,,,,,,,
+D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_WRITE_RESPONSE_CHANNEL.vhd,1766217072,vhdl,,,,axi_write_data_response_channel,,,,,,,,
+D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/AXI_master_transaction.vhd,1766831655,vhdl,,,,axi_master,,,,,,,,
+D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_ENGINE.vhd,1767428841,vhdl,,,,dma_engine,,,,,,,,
+D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/DMA_UART.vhd,1767452963,vhdl,D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sim_1/new/DMA_UART_tb.vhd,,,dma_uart,,,,,,,,
+D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sources_1/new/fifo_manager.vhd,1766217072,vhdl,,,,fifo_manager,,,,,,,,
+D:/Projects_Git/VHDL_lib/FIFO/FIFO.vhd,1766244090,vhdl,,,,fifo,,,,,,,,
+D:/Projects_Git/VHDL_lib/SIM/AXI4_Lite_Slave_Tester/axi4lite_master_pkg.vhd,1767465584,vhdl,D:/Projects_Git/DMA_UART/DMA_UART_2CH/DMA_UART_2CH.srcs/sim_1/new/DMA_UART_tb.vhd,,,axi4lite_master_pkg,,,,,,,,
+D:/Projects_Git/VHDL_lib/UART/RTL/UART_INTERFACE.vhd,1766831188,vhdl,,,,uart_interface,,,,,,,,
+D:/Projects_Git/VHDL_lib/UART/RTL/UART_RX.vhd,1766821393,vhdl,,,,uart_rx,,,,,,,,
+D:/Projects_Git/VHDL_lib/UART/RTL/UART_RX_INTERFACE.vhd,1766830314,vhdl,,,,uart_rx_interface,,,,,,,,
+D:/Projects_Git/VHDL_lib/UART/RTL/UART_TX.vhd,1766829722,vhdl,,,,uart_tx,,,,,,,,
+D:/Projects_Git/VHDL_lib/UART/RTL/UART_TX_INTERFACE.vhd,1766828601,vhdl,,,,uart_tx_interface,,,,,,,,
