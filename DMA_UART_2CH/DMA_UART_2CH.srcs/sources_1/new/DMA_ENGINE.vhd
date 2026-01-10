@@ -19,10 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -132,7 +129,7 @@ end DMA_ENGINE;
 
 architecture Behavioral of DMA_ENGINE is
 
-    type t_state is (ST_IDLE_TX_1, ST_RD_TX_1, ST_WR_TX_1, ST_IDLE_TX_2, ST_RD_TX_2, ST_WR_TX_3);
+    type t_state is (ST_IDLE_TX_1, ST_RD_TX_1, ST_WR_TX_1, ST_IDLE_TX_2, ST_RD_TX_2, ST_WR_TX_2);
     signal state : t_state;
     ---
     signal s_uart_0_tx_start_reg       : std_logic;
@@ -158,10 +155,11 @@ architecture Behavioral of DMA_ENGINE is
     signal s_uart_1_tx_fifo_wr_en : std_logic;
     signal s_uart_1_rx_fifo_rd_en : std_logic;
     -- Internal Signals --
-    signal s_uart_0_tx_data_cnt  : unsigned(11 downto 0);
-    signal s_uart_0_wait_tx_done : std_logic;
-    signal s_uart_1_tx_data_cnt  : unsigned(11 downto 0);
-    signal s_uart_1_wait_tx_done : std_logic;
+    signal s_uart_0_tx_data_cnt : unsigned(11 downto 0);
+    signal s_uart_0_tx_done_reg : std_logic;
+    ---
+    signal s_uart_1_tx_data_cnt : unsigned(11 downto 0);
+    signal s_uart_1_tx_done_reg : std_logic;
 
 begin
 
@@ -176,7 +174,7 @@ begin
     begin
         if rising_edge(i_clk) then
             if (i_rst = '1') then
-                state                       <= ST_IDLE;
+                state                       <= ST_IDLE_TX_1;
                 s_uart_0_tx_start_reg       <= '0';
                 s_uart_1_tx_start_reg       <= '0';
                 s_uart_0_1_sync_reg         <= '0';
@@ -207,19 +205,30 @@ begin
                 o_uart_1_tx_fifo_data_in <= (others => '0');
                 s_uart_1_rx_fifo_rd_en   <= '0';
                 ---
-                s_uart_0_tx_data_cnt  <= (others => '0');
-                s_uart_1_tx_data_cnt  <= (others => '0');
-                s_uart_0_wait_tx_done <= '0';
-                s_uart_1_wait_tx_done <= '0';
+                s_uart_0_tx_data_cnt <= (others => '0');
+                s_uart_1_tx_data_cnt <= (others => '0');
             else
                 case state is
                     when ST_IDLE_TX_1 =>
-                        go <= '0';
-                        if s_uart_0_tx_start_reg = '1' then
+                        go                <= '0';
+                        s_uart_0_byte_sel <= "00";
+
+                        if s_uart_0_tx_start_reg = '1' and s_uart_0_tx_busy = '0' then
                             s_uart_0_tx_busy <= '1';
                             state            <= ST_RD_TX_1;
+                        elsif s_uart_0_tx_busy = '1' then
+                            if s_uart_0_tx_data_cnt < unsigned(s_uart_0_tx_data_len_reg) then
+                                state <= ST_RD_TX_1; -- continue to transaction
+                            else
+                                state <= ST_IDLE_TX_2; -- transaction complete wait for UART complete
+                                if s_uart_0_tx_done_reg = '1' then
+                                    s_uart_0_tx_done_reg <= '0';
+                                    s_uart_0_tx_busy     <= '0';
+                                    s_uart_0_tx_data_cnt <= (others => '0');
+                                end if;
+                            end if;
                         else
-                            state            <= ST_IDLE_TX_2;
+                            state <= ST_IDLE_TX_2; -- there is no command, or on going transaction so check the
                         end if;
 
                     when ST_RD_TX_1 =>
@@ -239,7 +248,7 @@ begin
                                     s_read_fifo_en <= '1';
                                 end if;
                             else
-                                -- impelemet error condition
+                                -- impelement error condition
                             end if;
                         end if;
 
@@ -252,7 +261,6 @@ begin
 
                         if i_uart_0_tx_fifo_full = '0' and s_uart_0_tx_fifo_wr_en = '0' then
                             s_uart_0_tx_fifo_wr_en <= '1';
-                            s_uart_0_tx_data_cnt   <= s_uart_0_tx_data_cnt + 1;
 
                             case s_uart_0_byte_sel is
                                 when "00" =>
@@ -270,20 +278,26 @@ begin
                         end if;
 
                         if s_uart_0_tx_fifo_wr_en = '1' then
-                            s_uart_0_byte_sel <= s_uart_0_byte_sel + 1;
                             if s_uart_0_byte_sel = "11" then
                                 state <= ST_IDLE_TX_2;
                             end if;
-                        end if;
 
-                        if s_uart_0_tx_data_cnt = s_uart_0_tx_data_len_reg then
-                            s_uart_0_wait_tx_done <= '1';
+                            if s_uart_0_tx_data_cnt = unsigned(s_uart_0_tx_data_len_reg) then
+                                state <= ST_IDLE_TX_2;
+                            else
+                                s_uart_0_tx_data_cnt <= s_uart_0_tx_data_cnt + 1;
+                            end if;
                         end if;
 
                     when ST_IDLE_TX_2 =>
-                    
-                    when ST_RD_TX_2   =>
-                    when others       => state <= ST_IDLE;
+                        state <= ST_RD_TX_2;
+                    when ST_RD_TX_2 =>
+                        state <= ST_WR_TX_2;
+
+                    when ST_WR_TX_2 =>
+                        state <= ST_IDLE_TX_1;
+
+                    when others => state <= ST_IDLE;
                 end case;
             end if;
 
@@ -298,6 +312,14 @@ begin
                 s_uart_1_tx_start_reg       <= '1';
                 s_uart_1_tx_buffer_addr_reg <= i_uart_1_tx_buffer_addr;
                 s_uart_1_tx_data_len_reg    <= i_uart_1_tx_data_len;
+            end if;
+
+            if i_uart_0_tx_done_flag = '1' then
+                s_uart_0_tx_done_reg <= '1';
+            end if;
+
+            if i_uart_1_tx_done_flag = '1' then
+                s_uart_1_tx_done_reg <= '1';
             end if;
 
         end if;

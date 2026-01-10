@@ -149,7 +149,9 @@ begin
         axi4lite_write(s_axi_if, m_axi_aclk, std_logic_vector(to_unsigned(20+12,32)), x"00000300");
         --Write UART_1_DMA_RX_CFG Register = RX enable, buffer length = 256
         axi4lite_write(s_axi_if, m_axi_aclk, std_logic_vector(to_unsigned(20+16,32)), x"80000100");
-
+        wait for clk_period * 100;
+        --Write UART_0_1_DMA_TX_CTRL UART_0_tx_Data_Len = 16, UART_0_tx_Start = '1'
+        axi4lite_write(s_axi_if, m_axi_aclk, std_logic_vector(to_unsigned(40,32)), x"00001001");
 
         report "AXI4-Lite WRITE SUCCESSFUL" severity note;
         wait;

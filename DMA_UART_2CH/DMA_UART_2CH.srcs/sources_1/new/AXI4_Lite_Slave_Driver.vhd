@@ -254,8 +254,10 @@ begin
     ---- UART_0_1_DMA_TX_CTRL -----
     -------------------------------
     --[31:9] reserved
-    o_uart_0_1_sync <= slv_reg10(8);
-    --[7:2] reserved
+    o_uart_1_tx_data_len <= slv_reg10(31 downto 20);
+    o_uart_0_tx_data_len <= slv_reg10(19 downto 8);
+    --[7:3] reserved
+    o_uart_0_1_sync <= slv_reg10(2);
     o_uart_1_tx_start <= slv_reg10(1);
     o_uart_0_tx_start <= slv_reg10(0);
 
@@ -537,6 +539,10 @@ begin
                             slv_reg14 <= slv_reg14;
                             slv_reg15 <= slv_reg15;
                     end case;
+                end if;
+
+                if slv_reg10(1 downto 0) /= "00" then
+                    slv_reg10(1 downto 0) <= "00";
                 end if;
             end if;
         end if;
